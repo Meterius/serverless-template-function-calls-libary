@@ -1,0 +1,26 @@
+{
+  "name": "serverless-template-function-calls-libary",
+  "version": "0.0.1",
+  "description": "useful function module for the serverless template function calls plugin",
+  "main": "lib/index.js",
+  "scripts": {
+    "build:readme": "node generate-readme.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meterius/serverless-template-function-calls-libary.git"
+  },
+  "author": "Jonah Leander Hoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Meterius/serverless-template-function-calls-libary/issues"
+  },
+  "homepage": "https://github.com/Meterius/serverless-template-function-calls-libary#readme",
+  "devDependencies": {
+    "jsdoc-to-markdown": "^5.0.0",
+    "serverless-template-function-calls": "^0.1.1"
+  },
+  "dependencies": {
+    "change-case": "^3.1.0"
+  }
+}
