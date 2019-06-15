@@ -1,10 +1,10 @@
 {
   "name": "serverless-template-function-calls-libary",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "useful function module for the serverless template function calls plugin",
   "main": "lib/index.js",
   "scripts": {
-    "build:readme": "node generate-readme.js"
+    "build:readme": "node helper.js build:readme",
   },
   "repository": {
     "type": "git",
