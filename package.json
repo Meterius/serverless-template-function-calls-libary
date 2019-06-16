@@ -5,9 +5,9 @@
   "main": "lib/index.js",
   "scripts": {
     "build:readme": "node helper.js build:readme",
-    "publish:patch": "npm version patch && npm publish",
-    "publish:minor": "npm version minor && npm publish",
-    "publish:major": "npm version major && npm publish"
+    "publish:patch": "build:readme && npm version patch && npm publish",
+    "publish:minor": "build:readme && npm version minor && npm publish",
+    "publish:major": "build:readme && npm version major && npm publish"
   },
   "repository": {
     "type": "git",
