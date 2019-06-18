@@ -5,6 +5,12 @@ This package is a collection of useful functions for the usage of the [serverles
 ## Functions
 
 <dl>
+<dt><a href="#replaceAll">replaceAll(str, key, value)</a> ⇒ <code>string</code></dt>
+<dd><p>replaces all occurrences of key in the string by the value</p>
+</dd>
+<dt><a href="#replaceVars">replaceVars(str, vars)</a> ⇒ <code>string</code></dt>
+<dd><p>replaces all occurrences of vars keys in the string by the values of vars</p>
+</dd>
 <dt><a href="#toKebabCase">toKebabCase(str)</a> ⇒ <code>String</code></dt>
 <dd><p>converts string to kebab case</p>
 </dd>
@@ -27,11 +33,10 @@ This package is a collection of useful functions for the usage of the [serverles
 <dd><p>merges properties ignoring ones with double underscores of objects in array into single object</p>
 </dd>
 <dt><a href="#substitute">substitute(options)</a> ⇒ <code>*</code></dt>
-<dd><p>substitutes string variable in the keys and values of the content recursively with a value</p>
+<dd><p>substitutes keys of vars in the keys and values of the content recursively with the values of vars</p>
 </dd>
-<dt><a href="#mapSubstitute">mapSubstitute(options)</a> ⇒ <code>*</code></dt>
-<dd><p>substitutes string variable in the keys and values of the content recursively with multiple values and returns
-each possible substitution in an array</p>
+<dt><a href="#mapSubstitute">mapSubstitute(options)</a> ⇒ <code>Array</code></dt>
+<dd><p>returns each possible substitution by using one element of the varsArray elements as an array</p>
 </dd>
 <dt><a href="#capitalizeString">capitalizeString(str)</a> ⇒ <code>String</code></dt>
 <dd><p>capitalize string</p>
@@ -54,6 +59,31 @@ replaces them with the value if they match a key in vars</p>
 <dd><p>extracts objects of an array and adds their props to the siblings of the function call</p>
 </dd>
 </dl>
+
+<a name="replaceAll"></a>
+
+## replaceAll(str, key, value) ⇒ <code>string</code>
+replaces all occurrences of key in the string by the value
+
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| str | <code>string</code> | 
+| key | <code>string</code> | 
+| value | <code>string</code> | 
+
+<a name="replaceVars"></a>
+
+## replaceVars(str, vars) ⇒ <code>string</code>
+replaces all occurrences of vars keys in the string by the values of vars
+
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| str | <code>string</code> | 
+| vars | <code>Object</code> | 
 
 <a name="toKebabCase"></a>
 
@@ -141,29 +171,27 @@ merges properties ignoring ones with double underscores of objects in array into
 <a name="substitute"></a>
 
 ## substitute(options) ⇒ <code>\*</code>
-substitutes string variable in the keys and values of the content recursively with a value
+substitutes keys of vars in the keys and values of the content recursively with the values of vars
 
 **Kind**: global function  
 
 | Param | Type |
 | --- | --- |
 | options | <code>Object</code> | 
-| options.variable | <code>String</code> | 
-| options.value | <code>String</code> | 
+| options.vars | <code>String</code> | 
 | options.content | <code>\*</code> | 
 
 <a name="mapSubstitute"></a>
 
-## mapSubstitute(options) ⇒ <code>\*</code>
-substitutes string variable in the keys and values of the content recursively with multiple values and returnseach possible substitution in an array
+## mapSubstitute(options) ⇒ <code>Array</code>
+returns each possible substitution by using one element of the varsArray elements as an array
 
 **Kind**: global function  
 
 | Param | Type |
 | --- | --- |
 | options | <code>Object</code> | 
-| options.variable | <code>String</code> | 
-| options.values | <code>Array.&lt;String&gt;</code> | 
+| options.varsArray | <code>Object</code> | 
 | options.content | <code>\*</code> | 
 
 <a name="capitalizeString"></a>
