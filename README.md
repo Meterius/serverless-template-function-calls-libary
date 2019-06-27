@@ -33,7 +33,8 @@ This package is a collection of useful functions for the usage of the [serverles
 <dd><p>merges properties ignoring ones with double underscores of objects in array into single object</p>
 </dd>
 <dt><a href="#substitute">substitute(options)</a> ⇒ <code>*</code></dt>
-<dd><p>substitutes keys of vars in the keys and values of the content recursively with the values of vars</p>
+<dd><p>substitutes keys of vars in the keys and values of the content recursively with the values of vars
+and values that match a key directly are replaced by that keys value</p>
 </dd>
 <dt><a href="#mapSubstitute">mapSubstitute(options)</a> ⇒ <code>Array</code></dt>
 <dd><p>returns each possible substitution by using each vars from the varsArray</p>
@@ -171,7 +172,7 @@ merges properties ignoring ones with double underscores of objects in array into
 <a name="substitute"></a>
 
 ## substitute(options) ⇒ <code>\*</code>
-substitutes keys of vars in the keys and values of the content recursively with the values of vars
+substitutes keys of vars in the keys and values of the content recursively with the values of varsand values that match a key directly are replaced by that keys value
 
 **Kind**: global function  
 
