@@ -36,7 +36,7 @@ This package is a collection of useful functions for the usage of the [serverles
 <dd><p>substitutes keys of vars in the keys and values of the content recursively with the values of vars</p>
 </dd>
 <dt><a href="#mapSubstitute">mapSubstitute(options)</a> ⇒ <code>Array</code></dt>
-<dd><p>returns each possible substitution by using one element of the varsArray elements as an array</p>
+<dd><p>returns each possible substitution by using each vars from the varsArray</p>
 </dd>
 <dt><a href="#capitalizeString">capitalizeString(str)</a> ⇒ <code>String</code></dt>
 <dd><p>capitalize string</p>
@@ -178,20 +178,20 @@ substitutes keys of vars in the keys and values of the content recursively with 
 | Param | Type |
 | --- | --- |
 | options | <code>Object</code> | 
-| options.vars | <code>String</code> | 
+| options.vars | <code>Object</code> | 
 | options.content | <code>\*</code> | 
 
 <a name="mapSubstitute"></a>
 
 ## mapSubstitute(options) ⇒ <code>Array</code>
-returns each possible substitution by using one element of the varsArray elements as an array
+returns each possible substitution by using each vars from the varsArray
 
 **Kind**: global function  
 
 | Param | Type |
 | --- | --- |
 | options | <code>Object</code> | 
-| options.varsArray | <code>Object</code> | 
+| options.varsArray | <code>Array.&lt;Object&gt;</code> | 
 | options.content | <code>\*</code> | 
 
 <a name="capitalizeString"></a>
