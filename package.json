@@ -1,6 +1,6 @@
 {
   "name": "serverless-template-function-calls-library",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "useful function module for the serverless template function calls plugin",
   "main": "lib/index.js",
   "scripts": {
